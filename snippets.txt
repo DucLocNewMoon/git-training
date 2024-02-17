@@ -1,21 +1,34 @@
 1. explain what git is
 
-2. download git + github desktop + setup github
+2. 
+download git 
+github desktop 
+setup github
 
 3. 
+git config --global user.email
+git config --global user.name
 git init
 add a file
 git status
 git add ./<file or directory name>
-git commit -m <message> (message should be verb + action except the first commit)
+git commit -m <message> (message should be verb + action except the first commit, concise message)
 git log
 
 4. gitignore
 
 5.
-create a git repo on github
 local vs remote
+create ssh-key (to interact with remote repo)
+create a git repo on github
 git remote add origin <url> (the local dir name doesnt need to match to remote one)
 git remote remove origin <url>
-git config --global user.email
-git config --global user.name
+git remote -v
+git push origin main
+git pull origin main
+
+6.
+explain branch
+git branch
+git branch <branch name> + git checkout <branch name> = git checkout -b <branch name>
+commit something and and switch out
