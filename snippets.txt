@@ -1,0 +1,20 @@
+1. explain what git is
+
+2. download git + github desktop + setup github
+
+3. 
+git init
+add a file
+git status
+git add ./<file or directory name>
+git commit -m <message> (message should be verb + action except the first commit)
+git log
+
+4. gitignore
+
+5.
+create a git repo on github
+local vs remote
+git remote add origin <url> (the local dir name doesnt need to match to remote one)
+git remote remove origin <url>
+
