@@ -33,3 +33,9 @@ git branch
 git branch <branch name> + git checkout <branch name> = git checkout -b <branch name>
 commit something and and switch out
 add sth
+git merge <branch name> (Note: this is still local)
+
+7.
+git checkout -b <branch name>
+commit some changes and push to remote
+merge on remote
