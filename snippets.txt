@@ -55,11 +55,15 @@ git rebase <branch name>
 switch to 2 branches, 22 23 on one, 24 25 on another, 22->24->23->25, push both
 create pr for both -> merge one -> pull local main -> rebase to main-> merge other
 
-10. Managing commits
+10. Managing commits (very dangerous)
+10.1. 
 git reset <commit id> (soft, hard, local, remote)
 git undo
 git revert
 git commit --amend
+10.2.
+git push origin <origin> --force
+git rebase -i <commit id> (extremely dangerous to use)
 
 11. Managing branches with git stash
 explain git stash
