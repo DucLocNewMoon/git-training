@@ -5,7 +5,7 @@ from PySide6.QtWidgets import QApplication, QMessageBox
 from version import AppVersion
 from version_restriction import check_version_restriction
 from sentry import excepthook, initialize_sentry
-from src.windows import HotmailListWindow
+from src.windows import EmailListWindow
 
 
 # check if this app is running in a "frozen" environment, i.e. it has been packaged into an executable using tools like PyInstaller
@@ -33,6 +33,6 @@ if __name__ == '__main__':
         app = QApplication(sys.argv)
         sys.excepthook = excepthook
 
-        window = HotmailListWindow()
+        window = EmailListWindow()
         window.show()
         sys.exit(app.exec())
