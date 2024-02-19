@@ -2,6 +2,7 @@ import sys
 
 from PySide6.QtWidgets import QApplication, QMessageBox
 
+from version import AppVersion
 from version_restriction import check_version_restriction
 from sentry import excepthook, initialize_sentry
 from src.windows import HotmailListWindow
@@ -14,6 +15,9 @@ if getattr(sys, 'frozen', False):
 
 # check for app version restriction
 app_version = '1.0.1'
+is_active_or_none = check_version_restriction(app_version)
+
+app_version = AppVersion.VERSION.value
 is_active_or_none = check_version_restriction(app_version)
 
 if __name__ == '__main__':
